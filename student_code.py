@@ -25,7 +25,7 @@ class KnowledgeBase(object):
         """
         if fact not in self.facts and hasattr(fact,'name') and fact.name == "fact":
             self.facts.append(fact)
-        #print("Asserting {!r}".format(fact))
+        print("Asserting {!r}".format(fact))
         
     def kb_ask(self, fact):
         """Ask if a fact is in the KB
